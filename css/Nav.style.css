@@ -1,0 +1,132 @@
+/*
+Kaitiakitanga website- navbar style sheet
+*/
+/*
+used sticky positioning so that the navbar stays when scrolling up and down on the website
+used z-index so that the navigation bar would always be on top of the other context
+*/
+
+nav{
+    background-color: MediumSeaGreen;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/*
+the maximum width is going to be 100% so it would fit the whole screen
+main axis alignment with the flexbox
+applied appropriate margins fot the contents to avoid sticking to the edges
+applied user-select none so the user cant select the nav bar
+*/
+
+.nav-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select:none
+}
+/*
+kaitiakitanga website
+bold font reinforces the environmental themes
+zero margin ensure precise layout control within flexbox container
+*/
+
+.nav-logo .logo-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: green;
+    margin: 0;
+}
+
+/*
+use horizontal flexbox layout so that the menu is neatly arranged
+ 25px spacing creates a good separation gap*/
+.nav-menu {
+    display: flex;
+    gap: 25px;}
+
+/*
+navigation menu links
+white text on MediumSeaGreen makes it optimal to observe
+30px providing a excellent size of the font for the user to read
+0.1s transition provides smooth feedback*/
+
+.nav-menu a {
+    color: white;
+    font-size: 30px;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+    display: block;
+}
+
+/*
+nav hover effects
+*/
+
+.nav-menu a:hover {
+    background-color: green;
+    color: MediumSeaGreen;
+}
+
+/*
+mobile hamburger menu toggle
+it would be hidden on pc and be activated when on mobile devices
+CSS pseudo-elements creates animated toggle between hamburger and close icons
+padding provides internal spacing, allowing designers to control the distance between the content and the border of an element.
+*/
+
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease;
+}
+/*
+Hamburger menu hover state
+*/
+
+.menu-toggle:hover {
+    background-color: blue;
+}
+
+/*
+Active menu state provides good user feedback
+*/
+
+.menu-toggle.active: {
+    background-color: blue;
+    position: relative;
+    color: transparent;
+}
+
+/*
+css pseudo-element creates close symbol when menu is active
+*/
+
+.menu-toggle.active::before {
+    content; "x";
+    font-size: 40px;
+    position: absolute;
+    top: 50%
+    left 55%
+    transform: translate (-50%, -50%);
+    color:white;
+}
+
+/* mobile navbar styling*/
+
+@media (max-width:768px) {
+    .nav-container {
+        padding: 0 0.5rem;
+        position: relative;
+    }
+
+    .nav-logo {}}
