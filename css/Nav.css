@@ -6,7 +6,7 @@ used sticky positioning so that the navbar stays when scrolling up and down on t
 used z-index so that the navigation bar would always be on top of the other context
 */
 
-nav{
+nav {
     background-color: MediumSeaGreen;
     padding: 1rem 0;
     position: sticky;
@@ -35,7 +35,7 @@ bold font reinforces the environmental themes
 zero margin ensure precise layout control within flexbox container
 */
 
-.nav-logo .logo-text {
+.logo .logo-text {
     font-size: 50px;
     font-weight: bold;
     color: green;
@@ -45,7 +45,7 @@ zero margin ensure precise layout control within flexbox container
 /*
 use horizontal flexbox layout so that the menu is neatly arranged
  25px spacing creates a good separation gap*/
-.nav-menu {
+.menu {
     display: flex;
     gap: 25px;}
 
@@ -55,7 +55,7 @@ white text on MediumSeaGreen makes it optimal to observe
 30px providing a excellent size of the font for the user to read
 0.1s transition provides smooth feedback*/
 
-.nav-menu a {
+.menu a {
     color: white;
     font-size: 30px;
     padding: 1rem 1.5rem;
@@ -68,7 +68,7 @@ white text on MediumSeaGreen makes it optimal to observe
 nav hover effects
 */
 
-.nav-menu a:hover {
+.menu a:hover {
     background-color: green;
     color: MediumSeaGreen;
 }
@@ -129,4 +129,52 @@ css pseudo-element creates close symbol when menu is active
         position: relative;
     }
 
-    .nav-logo {}}
+    .logo {
+    flex: 1;
+    text-align: left;
+    }
+    .logo .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: green;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 0.8rem 1.5rem;
+        border-radius: 0;
+        text-align: center;
+        border-bottom: 1px solid blue;
+    }
+
+    /*remove border from the menu item */
+    .menu li:last-child a {
+        border-bottom: none;
+    }
+
+    /* mobile menu hover effects */
+    .menu a:hover {
+        background: green;
+    }
+}
