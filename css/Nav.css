@@ -117,7 +117,7 @@ css pseudo-element creates close symbol when menu is active
     position: absolute;
     top: 50%
     left 55%
-    transform: translate (-50%, -50%);
+    transform: translate(-50%, -50%);
     color:white;
 }
 

@@ -1,0 +1,13 @@
+.link{
+    color: blue;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2), url('../img/.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
