@@ -7,11 +7,11 @@ used z-index so that the navigation bar would always be on top of the other cont
 */
 
 nav {
-    background-color: MediumSeaGreen;
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
+    backdrop-filter: blur(0px);
 }
 /*
 the maximum width is going to be 100% so it would fit the whole screen
