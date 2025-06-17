@@ -3,6 +3,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const mobileToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.menu');
+    const navbar = document.querySelector('nav');
+
 
     if (mobileToggle && mainNav) {
         mobileToggle.addEventListener('click', function() {
@@ -20,5 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 mobileToggle.classList.remove('active');
             }
         });
+    });
+
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        }
+        else {
+            navbar.classList.remove('scrolled');
+        }
     });
 });
