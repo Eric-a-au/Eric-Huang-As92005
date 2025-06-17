@@ -38,7 +38,7 @@ zero margin ensure precise layout control within flexbox container
 .logo .logo-text {
     font-size: 50px;
     font-weight: bold;
-    color: green;
+    color: #1B4F72;
     margin: 0;
 }
 
@@ -69,8 +69,7 @@ nav hover effects
 */
 
 .menu a:hover {
-    background-color: green;
-    color: MediumSeaGreen;
+        color: blue;
 }
 
 /*
@@ -82,7 +81,7 @@ padding provides internal spacing, allowing designers to control the distance be
 
 .menu-toggle {
     display: none;
-    font-size: 25px;
+    font-size: 40px;
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 5px;
@@ -94,7 +93,7 @@ Hamburger menu hover state
 */
 
 .menu-toggle:hover {
-    background-color: green;
+    background-color: #85C1E9;
 }
 
 /*
@@ -102,7 +101,7 @@ Active menu state provides good user feedback
 */
 
 .menu-toggle.active {
-    background-color: green;
+    background-color: blue;
     position: relative;
     color: transparent;
 }
@@ -112,11 +111,11 @@ css pseudo-element creates close symbol when menu is active
 */
 
 .menu-toggle.active::before {
-    content; "x";
+    content: "x";
     font-size: 40px;
     position: absolute;
-    top: 50%
-    left 55%
+    top: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
     color:white;
 }
@@ -132,9 +131,10 @@ css pseudo-element creates close symbol when menu is active
     .logo {
         flex: 1;
         text-align: left;
+
     }
     .logo .logo-text {
-        font-size: 1.5rem;
+        font-size: 50px;
     }
 
     .menu-toggle {
@@ -150,14 +150,14 @@ css pseudo-element creates close symbol when menu is active
         right: 0;
         flex-direction: column;
         gap: 0;
-        background-color: green;
+        background-color: #3498DB;
         border-radius: 5px;
         overflow: hidden;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         z-index: 1000;
     }
 
-    .menu-toggle.active {
+    .menu.active {
         display: flex;
     }
 
@@ -165,7 +165,7 @@ css pseudo-element creates close symbol when menu is active
         padding: 0.8rem 1.5rem;
         border-radius: 0;
         text-align: center;
-        border-bottom: 1px solid green;
+        color:black;
     }
 
     /*remove border from the menu item */
@@ -175,6 +175,7 @@ css pseudo-element creates close symbol when menu is active
 
     /* mobile menu hover effects */
     .menu a:hover {
-        background: green;
+        background: navy;
+         color: white;
     }
 }
