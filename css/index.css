@@ -61,21 +61,23 @@ body {
     margin:auto;
 }
 @media (max-width: 768px) {
-    .main-content {
-        min-height: calc(100vh - 100px);
-        padding-top: 40px;
+    .context {
+        padding: 20px 10px;
+        gap: 20px;
+        align-items: center;
     }
     .container {
-        margin:0 ;
-        padding: 50px 30px;
+        margin:0 auto;
+        padding: 30px 20px;
         width: 90%;
         max-width: none;
+        box-sizing: border-box;
     }
     .container h1 {
         font-size: 3rem;
     }
-    .intro-text {
+    .intro{
         font-size: 1.2rem;
-        padding: 25px;
+        padding: 20px;
         }
 }
