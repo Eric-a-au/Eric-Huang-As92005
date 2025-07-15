@@ -1,0 +1,27 @@
+
+.footer {
+    background: #6495ED;
+    color: #F0FFFF;
+    padding: 60px 60px;
+    margin-top: auto;
+    border-top: 8px solid
+}
+
+.footer-content {
+    max-width:1000px;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    color: #87CEFA;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
