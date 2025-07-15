@@ -16,11 +16,13 @@
     gap: 50px;
     align-items: start;
     margin-bottom: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
 }
 
 .footer-section h4 {
     color: #87CEFA;
-    font-size: 1.2rem;
+    font-size: 35px;
     margin-bottom: 15px;
     font-weight: 500;
     text-transform: uppercase;

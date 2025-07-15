@@ -1,5 +1,5 @@
 .link{
-    color: blue;
+    color: pink;
 }
 
 body {
@@ -31,15 +31,22 @@ body {
     min-height:400px;
     margin: 20px auto;
     padding: 40px 50px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #004C99;
     text-align: center;
     justify-content: center;
     color: white;
     border-radius: 20px;
 }
 
+.container {
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 .container h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: bold;
