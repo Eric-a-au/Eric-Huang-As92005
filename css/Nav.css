@@ -30,8 +30,9 @@ applied user-select none so the user cant select the nav bar
     margin: 0 auto;
     padding: 0 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap:50px;
     user-select:none;
 }
 
@@ -142,6 +143,34 @@ css pseudo-element creates close symbol when menu is active
     color:white;
 }
 
+.search {
+    width: max-content;
+    display: flex;
+    float: right;
+    padding: 14px;
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: box-shadow 0.25s;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 2px rgba(0,0,0,0.75);
+}
+
+.search-input {
+    font-size:16px;
+    color:#333333;
+    margin-left: 28px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+}
+
+.search-input::placeholder,
+.search-icon {
+    color: rgba (0,0,0,0.5);
+}
 /* mobile navbar styling*/
 
 @media (max-width:768px) {
@@ -200,5 +229,8 @@ css pseudo-element creates close symbol when menu is active
     .menu a:hover {
          background: #2980b9;
          color: white;
+    }
+    .search{
+        display:none;
     }
 }
