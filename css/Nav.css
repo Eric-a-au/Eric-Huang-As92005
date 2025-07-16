@@ -30,7 +30,7 @@ applied user-select none so the user cant select the nav bar
     margin: 0 auto;
     padding: 0 50px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap:50px;
     user-select:none;
@@ -143,10 +143,15 @@ css pseudo-element creates close symbol when menu is active
     color:white;
 }
 
+.logo-menu {
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+
 .search {
     width: max-content;
     display: flex;
-    float: right;
     padding: 14px;
     border-radius: 28px;
     background: #f6f6f6;
