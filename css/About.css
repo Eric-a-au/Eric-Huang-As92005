@@ -1,7 +1,73 @@
+body{
+    background: url('../img/about-page-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.climate-change {
+    text-align: center;
+    padding: 80px 20px 40px;
+    color: white;
+}
+
+.climate-change h1{
+    font-size: 40px;
+}
+
 .cards {
     display: flex;
+    justify-content: center;
+    align- items: center;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
 }
 
 .card{
     background-color: white;
+    border-radius: 20px;
+    padding: 40px ;
+    box-shadow: 0 10px 30px rgba (0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+    max-width: 800px;
+    width: 100%;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px;
+}
+
+.card h2 {
+    font-size: 30px;
+    color: #1B4F72;
+    text-align: center;
+}
+
+.card .intro {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .climate-change{
+        padding: 60px 20px 20px;
+}
+    .climate-change h1{
+        font-size: 30px;
+    }
+    .cards {
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: stretch;
+    }
+    .card {
+    padding: 30px 20px;
+    max-width: none;
+    width: 100%;
+    }
+
 }
