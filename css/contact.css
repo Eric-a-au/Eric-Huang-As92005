@@ -5,6 +5,9 @@ body{
     background-attachment: fixed;
     min-height: 100vh;
     flex-direction: column;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .contact {
@@ -26,13 +29,18 @@ body{
 
 .contact .content h2 {
     font-size: 36px;
-    font-weight:500px;
+    font-weight:bold;
     color:#fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .contact .content p {
-    font-weight: 300px;
+    font-weight: 300;
     color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 .container {
     width: 100%;
@@ -44,7 +52,7 @@ body{
 
 .container .contactinfo {
     width: 50%;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -55,14 +63,27 @@ body{
 }
 
 .container .contactinfo .box .icon{
+    min-weight: 60px;
     min-height: 60px;
+    width: 60px;
     height: 60px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 22px;
+    font-size: 24px;
+    color:white;
+    box-shadow: 0 4px 15px rgba(0,188,212,0.3);
+}
+
+.container .contactinfo .box .icon:hover {
+    transform:translateY (-2px);
+    box-shadow: 0 6px 20px box-shadow: 0 4px 15px rgba(0,188,212,0.3);
+}
+
+.container .contactinfo .box .icon .material-symbols-outlined {
+    font-size:24px;
 }
 
 .container .contactinfo .box .text {
