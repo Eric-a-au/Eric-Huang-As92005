@@ -4,8 +4,8 @@ body{
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
@@ -28,10 +28,10 @@ body{
 }
 
 .contact .content h2 {
-    font-size: 36px;
-    font-weight:bold;
-    color:#fff;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     margin-bottom: 20px;
     font-family: "Bebas Neue", sans-serif;
 }
@@ -39,8 +39,8 @@ body{
 .contact .content p {
     font-weight: 300;
     color: #fff;
-    font-size: 20px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 .container {
     width: 100%;
@@ -48,56 +48,63 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    gap: 50px;
 }
 
 .container .contactinfo {
     width: 50%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .container .contactinfo .box {
     position: relative;
-    padding: 20px 0;
+    padding: 25px;
     display: flex;
-}
-
-.container .contactinfo .box .icon{
-    min-weight: 60px;
-    min-height: 60px;
-    width: 60px;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    font-size: 24px;
-    color:white;
-    box-shadow: 0 4px 15px rgba(0,188,212,0.3);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border-left: 4px solid #00bcd4;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
-.container .contactinfo .box .icon:hover {
-    transform:translateY (-2px);
-    box-shadow: 0 6px 20px box-shadow: 0 4px 15px rgba(0,188,212,0.3);
-}
-
-.container .contactinfo .box .icon .material-symbols-outlined {
-    font-size:24px;
+.container .contactinfo .box:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(10px);
+    box-shadow: 0 5px 20px rgba(0, 188, 212, 0.3);
 }
 
 .container .contactinfo .box .text {
-    display:flex;
-    margin-left: 20px;
+    display: flex;
     font-size: 16px;
     color: #fff;
     flex-direction: column;
     font-weight: 300;
+    width: 100%;
 }
 
 .container .contactinfo .box .text h3 {
-    font-weight: 500;
+    font-weight: bold;
     color: #00bcd4;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-family: "Bebas Neue", sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container .contactinfo .box .text p {
+    color: #f0f0f0;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .contactform {
@@ -140,8 +147,105 @@ body{
     color: #666;
 }
 
-.contactform .inputbox input:focus ~ span, .contactform .inputbox input:valid ~ span, .contactform .inputbox input:focus ~ textarea, .contactform .inputbox input:valid ~ textarea {
+.contactform .inputbox input:focus ~ span, .contactform .inputbox input:valid ~ span, .contactform .inputbox textarea:focus ~ span, .contactform .inputbox textarea:valid ~ span {
     color: #e91e63;
     font-size: 12px;
-    transform: translate(-20px);
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contactform .inputbox input[type="submit"]:hover {
+    background: #0097a7;
+    transform: translateY(-2px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container .contactinfo {
+        width: 100%;
+        order: 2;
+        padding: 25px 20px;
+        gap: 15px;
+    }
+
+    .container .contactinfo .box {
+        padding: 20px;
+    }
+
+    .container .contactinfo .box .text h3 {
+        font-size: 1.2rem;
+    }
+
+    .container .contactinfo .box .text p {
+        font-size: 0.95rem;
+    }
+
+    .contactform {
+        width: 100%;
+        order: 1;
+        padding: 30px 20px;
+    }
+
+    .contact .content h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact .content p {
+        font-size: 1rem;
+    }
+
+    .contactform h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px;
+    }
+
+    .contact .content h2 {
+        font-size: 2rem;
+    }
+
+    .contactform {
+        padding: 20px 15px;
+    }
+
+    .container .contactinfo {
+        padding: 20px 15px;
+        gap: 12px;
+    }
+
+    .container .contactinfo .box {
+        padding: 18px;
+    }
+
+    .container .contactinfo .box .text h3 {
+        font-size: 1.1rem;
+    }
+
+    .container .contactinfo .box .text p {
+        font-size: 0.9rem;
+    }
 }
