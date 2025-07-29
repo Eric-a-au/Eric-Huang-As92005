@@ -3,7 +3,7 @@
 }
 
 body {
-    background:url("/img/climatechange.jpg");
+    background:url("../img/climatechange.jpg");
     background-size:cover;
     background-position:center;
     background-attachment: fixed;
@@ -41,7 +41,7 @@ body {
 .container {
   font-family: "Winky Rough", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
