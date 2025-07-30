@@ -1,24 +1,31 @@
+<!-- This is the About page. It explains what climate change is and how it affects New Zealand. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>About page</title>
-     <link rel="stylesheet" href="css/reset.css">
-     <link rel="stylesheet" href="css/Nav.css">
-     <link rel="stylesheet" href="css/Footer.css">
-     <link rel="stylesheet" href="css/About.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search">
+    <!-- The <head> section sets up the page title, fonts, and CSS styles. -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Nav.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search">
 </head>
 <body>
-   <nav>
+    <!-- The <nav> section is the top menu. It has the logo, links to other pages, and a search box. -->
+    <nav>
+        <!-- Navigation container: holds the logo, menu, and search -->
         <div class="nav-container">
-          <div class="logo-menu">
-              <div class="logo">
-                      <img src="img/climate.logo1.png" alt="logo">
+            <!-- Logo and menu section -->
+            <div class="logo-menu">
+                <!-- Logo image and site name -->
+                <div class="logo">
+                    <img src="img/climate.logo1.png" alt="logo">
+                    <!-- Site name text -->
                     <div class="text">
                         <a href="index.html"><span class="logo-text">Act On Climate</span></a>
                     </div>
@@ -30,8 +37,10 @@
                     <li><a href="About.html">About</a></li>
                     <li><a href="Contact.html">Contact us</a></li>
                 </ul>
-          </div>
+            </div>
+            <!-- Search form -->
             <form>
+                <!-- Search input and icon -->
                 <div class="search">
                     <span class="search-icon material-symbols-outlined">search</span>
                     <input class="search-input" type="search" placeholder="Search">
@@ -39,12 +48,15 @@
             </form>
         </div>
     </nav>
+    <!-- Section title for climate change -->
     <div class="climate-change">
         <h1>How has Climate Change affect us?</h1>
 
     </div>
+    <!-- Cards section: each card gives info about climate change -->
     <div class="cards">
         <a href="https://www.royalsociety.org.nz/what-we-do/our-expert-advice/all-expert-advice-papers/climate-change-implications-for-new-zealand/" target="_blank">
+            <!-- Card: Effects of climate change in New Zealand -->
             <div class="card">
                 <h2>What does climate change do to New Zealand?</h2>
                 <p class="intro">
@@ -59,6 +71,7 @@
             </div>
          </a>
         <a href="https://science.nasa.gov/climate-change/causes/" target="_blank">
+            <!-- Card: Causes of climate change -->
             <div class="card">
                 <h2>Cause of climate change</h2>
                 <p class="intro">
@@ -68,6 +81,7 @@
             </div>
         </a>
         <a href="https://niwa.co.nz/climate-change-information-climate-solvers/climate-change-and-possible-impacts-new-zealand" target="_blank">
+            <!-- Card: Possible impacts on New Zealand -->
             <div class="card">
                 <h2>Possible climate change impact on New Zealand</h2>
                 <p class="intro">
@@ -76,6 +90,7 @@
             </div>
         </a>
         <a href="https://apopo.co.nz/new-zealands-climate-change-actions-and-kaitiakitanga-a-unique-aotearoa-approach/?srsltid=AfmBOor5hQ1XczgVOY1fss_UxiRsSmB9ehZmn90dFxEHIZEYJv19yAgp" target="_blank">
+            <!-- Card: New Zealand’s actions and kaitiakitanga -->
             <div class="card">
                 <h2>New Zealand’s Climate Change Actions, and kaitiakitanga of cultural sites</h2>
                 <p class="intro">
@@ -85,13 +100,16 @@
             </div>
         </a>
     </div>
+    <!-- Footer section: extra info and links -->
     <footer class="footer">
         <div class="footer-content">
+            <!-- Footer: Kaitiakitanga info -->
             <div class="footer-section">
                 <h4>Kaitiakitanga</h4>
                 <p> guardianship and protection, refers to the responsibility to care for and protect the land, water, and other natural resources for future generations.</p>
             </div>
 
+            <!-- Footer: Links to other pages -->
             <div class="footer-section">
                 <h4>Links</h4>
                 <ul>
@@ -101,7 +119,8 @@
                 </ul>
             </div>
         </div>
-    </footer>'
+    </footer>
+    <!-- JavaScript for navigation menu functionality -->
     <script src="js/nav.js"></script>
 </body>
 </html>

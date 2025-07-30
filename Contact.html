@@ -1,24 +1,31 @@
+<!-- This is the Contact page. People can find contact info or send a message here. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Contact page</title>
-     <link rel="stylesheet" href="css/reset.css"> <!-- This is linking it to each other so when you click on it, it makes you go to the page. -->
-     <link rel="stylesheet" href="css/Nav.css">
-     <link rel="stylesheet" href="css/Footer.css">
-     <link rel="stylesheet" href="css/contact.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search">
+    <!-- The <head> section sets up the page title, fonts, and CSS styles. -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/Nav.css"/>
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 </head>
 <body>
-   <nav>
+    <!-- The <nav> section is the top menu. It has the logo, links to other pages, and a search box. -->
+    <nav>
+        <!-- Navigation container: holds the logo, menu, and search -->
         <div class="nav-container">
-          <div class="logo-menu">
-                    <div class="logo">
-                      <img src="img/climate.logo1.png" alt="logo">
+            <!-- Logo and menu section -->
+            <div class="logo-menu">
+                <!-- Logo image and site name -->
+                <div class="logo">
+                    <img src="img/climate.logo1.png" alt="logo"/>
+                    <!-- Site name text -->
                     <div class="text">
                         <a href="index.html"><span class="logo-text">Act On Climate</span></a>
                     </div>
@@ -30,8 +37,10 @@
                     <li><a href="About.html">About</a></li>
                     <li><a href="Contact.html">Contact us</a></li>
                 </ul>
-          </div>
+            </div>
+            <!-- Search form -->
             <form>
+                <!-- Search input and icon -->
                 <div class="search">
                     <span class="search-icon material-symbols-outlined">search</span>
                     <input class="search-input" type="search" placeholder="Search">
@@ -39,64 +48,71 @@
             </form>
         </div>
     </nav>
-        <section class="contact">
-            <div class="content">
-                <h2>Contact Us</h2>
-                <p>How can we help you?</p>
-            </div>
-            <div class="container">
-                <div class="contactinfo">
-                   <div class="box">
-                       <div class="text">
-                           <h3>Address</h3>
-                           <p>Frost Road, <br>Mount Roskill, <br>Auckland 1041</p>
-                       </div>
-                   </div>
-                   <div class="box">
-                       <div class="text">
-                           <h3>Phone</h3>
-                           <p>+64 9 621 0050</p>
-                       </div>
-                   </div>
-                   <div class="box">
-                       <div class="text">
-                           <h3>Email</h3>
-                           <p>admin@mrgs.school.nz</p>
-                       </div>
-                   </div>
+
+    <!-- Contact section: has contact info and a form -->
+    <section class="contact">
+        <!-- Top content: title and help text -->
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>How can we help you?</p>
+        </div>
+        <!-- Main container: holds contact info and form -->
+        <div class="container">
+            <!-- Contact info: address, phone, email -->
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Frost Road, <br>Mount Roskill, <br>Auckland 1041</p>
+                    </div>
                 </div>
-                <div class="contactform">
-                    <form>
-                        <h2>Send Message</h2>
-                        <div class="inputbox">
-                            <input type="text" name=" " required="required">
-                            <span>Full Name</span>
-                        </div>
-                        <div class="inputbox">
-                            <input type="text" name=" " required="required">
-                            <span>Email</span>
-                        </div>
-                        <div class="inputbox">
-                            <textarea required="required"></textarea>
-                            <span>Type Your Message...</span>
-                        </div>
-                        <div class="inputbox">
-                            <input type="submit" name=" " value="Send">
-                        </div>
-                    </form>
+                <div class="box">
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+64 9 621 0050</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>admin@mrgs.school.nz</p>
+                    </div>
                 </div>
             </div>
-        </section>
+            <!-- Contact form: user can send a message -->
+            <div class="contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name=" " required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name=" " required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name=" " value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
-
-
+    <!-- Footer section: extra info and links -->
     <footer class="footer">
         <div class="footer-content">
+            <!-- Footer: Kaitiakitanga info -->
             <div class="footer-section">
                 <h4>Kaitiakitanga</h4>
                 <p> guardianship and protection, refers to the responsibility to care for and protect the land, water, and other natural resources for future generations.</p>
             </div>
 
+            <!-- Footer: Links to other pages -->
             <div class="footer-section">
                 <h4>Links</h4>
                 <ul>
@@ -107,6 +123,7 @@
             </div>
         </div>
     </footer>
+    <!-- JavaScript for navigation menu functionality -->
     <script src="js/nav.js"></script>
 </body>
 </html>
