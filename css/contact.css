@@ -170,7 +170,6 @@ body{
     transform: translateY(-2px);
 }
 
-/* 响应式设计 */
 @media (max-width: 768px) {
     .contact {
         padding: 20px;
@@ -202,7 +201,6 @@ body{
 
     .contactform {
         width: 100%;
-        order: 1;
         padding: 30px 20px;
     }
 

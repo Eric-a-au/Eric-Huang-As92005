@@ -1,24 +1,31 @@
+<!-- This is the Home page. It introduces climate change and why it matters. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
-     <link rel="stylesheet" href="css/reset.css">
-     <link rel="stylesheet" href="css/Nav.css">
-     <link rel="stylesheet" href="css/Footer.css">
-     <link rel="stylesheet" href="css/index.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search">
+    <!-- The <head> section sets up the page title, fonts, and CSS styles. -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Nav.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 </head>
 <body>
+    <!-- The <nav> section is the top menu. It has the logo, links to other pages, and a search box. -->
     <nav>
+        <!-- Navigation container: holds the logo, menu, and search -->
         <div class="nav-container">
-          <div class="logo-menu">
-              <div class="logo">
-                      <img src="img/climate.logo1.png" alt="logo">
+            <!-- Logo and menu section -->
+            <div class="logo-menu">
+                <!-- Logo image and site name -->
+                <div class="logo">
+                    <img src="img/climate.logo1.png" alt="logo" />
+                    <!-- Site name text -->
                     <div class="text">
                         <a href="index.html"><span class="logo-text">Act On Climate</span></a>
                     </div>
@@ -30,8 +37,10 @@
                     <li><a href="About.html">About</a></li>
                     <li><a href="Contact.html">Contact us</a></li>
                 </ul>
-          </div>
+            </div>
+            <!-- Search form -->
             <form>
+                <!-- Search input and icon -->
                 <div class="search">
                     <span class="material-symbols-outlined">search</span>
                     <input class="search-input" type="search" placeholder="Search">
@@ -40,38 +49,45 @@
         </div>
     </nav>
 
-            <div class="container">
-                <h1>Introduce of Climate Change?</h1>
-                    <p class="intro">
-                        Climate change refers to long-term shifts in temperatures and weather patterns. Such shifts can be natural, due to changes in the sun’s activity or large volcanic eruptions. But since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels like coal, oil and gas.
-                        Burning fossil fuels generates greenhouse gas emissions that act like a blanket wrapped around the Earth, trapping the sun’s heat and raising temperatures.
-                        The main greenhouse gases that are causing climate change include carbon dioxide and methane. These come from using gasoline for driving a car or coal for heating a building, for example. Clearing land and cutting down forests can also release carbon dioxide. Agriculture, oil and gas operations are major sources of methane emissions. Energy, industry, transport, buildings, agriculture and land use are among the main sectors causing greenhouse gases.
-                    <div>source from
-                        <a class="link" href="https://www.un.org/en/climatechange/what-is-climate-change" target="_blank">Link </a>
-                    </div>
-                </div>
-            /div>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Sv7OHfpIRfU?si=wwQC5OQf5BzdeNhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    /div>
-    <footer class="footer">
-    <div class="footer-content">
-        <div class="footer-section">
-            <h4>Kaitiakitanga</h4>
-            <p> guardianship and protection, refers to the responsibility to care for and protect the land, water, and other natural resources for future generations.</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Links</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact us</a></li>
-            </ul>
-        </div>
+    <!-- Main content container: title and introduction -->
+    <div class="container">
+        <h1>Introduce of Climate Change?</h1>
+        <p class="intro">
+            Climate change refers to long-term shifts in temperatures and weather patterns. Such shifts can be natural, due to changes in the sun’s activity or large volcanic eruptions. But since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels like coal, oil and gas.
+            Burning fossil fuels generates greenhouse gas emissions that act like a blanket wrapped around the Earth, trapping the sun’s heat and raising temperatures.
+            The main greenhouse gases that are causing climate change include carbon dioxide and methane. These come from using gasoline for driving a car or coal for heating a building, for example. Clearing land and cutting down forests can also release carbon dioxide. Agriculture, oil and gas operations are major sources of methane emissions. Energy, industry, transport, buildings, agriculture and land use are among the main sectors causing greenhouse gases.
+            <!-- Source link for the introduction -->
+            <div>source from
+                <a class="link" href="https://www.un.org/en/climatechange/what-is-climate-change" target="_blank">Link </a>
+            </div>
     </div>
-</footer>
+
+    <!-- Video section: YouTube video about climate change -->
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Sv7OHfpIRfU?si=wwQC5OQf5BzdeNhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer section: extra info and links -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Footer: Kaitiakitanga info -->
+            <div class="footer-section">
+                <h4>Kaitiakitanga</h4>
+                <p> guardianship and protection, refers to the responsibility to care for and protect the land, water, and other natural resources for future generations.</p>
+            </div>
+
+            <!-- Footer: Links to other pages -->
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript for navigation menu functionality -->
     <script src="js/nav.js"></script>
-    </body>
+</body>
 </html>
