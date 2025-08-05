@@ -169,7 +169,7 @@ body{
     background: #0097a7;
     transform: translateY(-2px);
 }
-
+/* This is for mobile or smaller screens*/
 @media (max-width: 768px) {
     .contact {
         padding: 20px;

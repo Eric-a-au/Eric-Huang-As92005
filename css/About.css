@@ -51,7 +51,7 @@ body{
 .card .intro {
     font-size: 18px;
 }
-
+/* This is for mobile or smaller screens*/
 @media (max-width: 768px) {
     .climate-change{
         padding: 60px 20px 20px;

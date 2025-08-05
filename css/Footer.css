@@ -1,4 +1,4 @@
-
+/* This is design of the footer and how it is placed on the website */
 .footer {
     background: #6495ED;
     color: #F0FFFF;
@@ -6,7 +6,7 @@
     margin-top: auto;
     border-top: 8px solid
 }
-
+/* This is to desgin the information and where the words would be place*/
 .footer-content {
     max-width:1000px;
     margin: auto;
@@ -19,7 +19,7 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 28px;
 }
-
+/* This is to design the words in the footer*/
 .footer-section h4 {
     color: #87CEFA;
     font-size: 35px;
