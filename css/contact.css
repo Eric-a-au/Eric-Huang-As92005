@@ -1,3 +1,5 @@
+
+/* This is setting the background of the contact css*/
 body{
     background: url("../img/ice.jpg");
     background-size: cover;
@@ -9,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
 }
-
+/* This is setting the form and the info of the contact page.*/
 .contact {
     position: relative;
     min-height: 100vh;
@@ -18,7 +20,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     background-size: cover;
 }
 
@@ -26,7 +27,7 @@ body{
     max-width: 800px;
     text-align:center;
 }
-
+/* This is the title of the contact page*/
 .contact .content h2 {
     font-size: 3rem;
     font-weight: bold;
@@ -35,13 +36,14 @@ body{
     margin-bottom: 20px;
     font-family: "Bebas Neue", sans-serif;
 }
-
+/* This is the part where it says "How can I help you" setting the colour and font*/
 .contact .content p {
     font-weight: 300;
     color: #fff;
     font-size: 1.2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
+/* This is to not set the info and form into a single file column*/
 .container {
     width: 100%;
     display:flex;
@@ -51,6 +53,7 @@ body{
     gap: 50px;
 }
 
+/* This is the part that makes the info part bigger so it is more visible for the user*/
 .container .contactinfo {
     width: 50%;
     display: flex;
@@ -63,7 +66,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
-
+/* This is adding another contain around each info so it can stand out more*/
 .container .contactinfo .box {
     position: relative;
     padding: 25px;
@@ -75,7 +78,7 @@ body{
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
 }
-
+/* This is when you hover over the container on the info it stands out so the user knows which one they hovered on*/
 .container .contactinfo .box:hover {
     background: rgba(255, 255, 255, 0.15);
     transform: translateX(10px);
@@ -90,7 +93,7 @@ body{
     font-weight: 300;
     width: 100%;
 }
-
+/* This is the changing the info title of each part like "phone" "address" the colour and font so that it would be more visible */
 .container .contactinfo .box .text h3 {
     font-weight: bold;
     color: #00bcd4;
@@ -99,32 +102,32 @@ body{
     font-family: "Bebas Neue", sans-serif;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-
+/* This changes a little bit on the fonts for the info part*/
 .container .contactinfo .box .text p {
     color: #f0f0f0;
     font-size: 1rem;
     line-height: 1.6;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
-
+/* This sets a border around the sent a message part*/
 .contactform {
     width: 40%;
     padding: 40px;
     background: #fff;
 }
-
+/* This is the font of the title of the message*/
 .contactform h2 {
     font-size: 30px;
     color: #333;
     font-weight: 500;
 }
-
+/* This is the part where it shows which line is for what example, entering the name or email and message*/
 .contactform .inputbox {
     position:relative;
     width: 100%;
     margin-top: 10px;
 }
-
+/* This is the part that makes the boxes of the entering form part*/
 .contactform .inputbox input, .contactform .inputbox textarea {
     width: 100%;
     padding: 5px 0;
@@ -135,7 +138,7 @@ body{
     outline: none;
     resize: none;
 }
-
+/* This is the part that when you click on the message boxes the message will move */
 .contactform .inputbox span {
     position: absolute;
     left: 0;
@@ -147,12 +150,13 @@ body{
     color: #666;
 }
 
+/* This part when you click on the boxes it will have a movement and the font will change into red */
 .contactform .inputbox input:focus ~ span, .contactform .inputbox input:valid ~ span, .contactform .inputbox textarea:focus ~ span, .contactform .inputbox textarea:valid ~ span {
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-20px);
 }
-
+/* This changes into send button smaller and on the side with colours*/
 .contactform .inputbox input[type="submit"] {
     width: 100px;
     background: #00bcd4;
@@ -164,7 +168,7 @@ body{
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-
+/* This is when you hover your mouse over the button the user will know what they are going to click*/
 .contactform .inputbox input[type="submit"]:hover {
     background: #0097a7;
     transform: translateY(-2px);

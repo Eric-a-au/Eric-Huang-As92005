@@ -1,7 +1,4 @@
 /*
-Kaitiakitanga website- navbar style sheet
-*/
-/*
 used sticky positioning so that the navbar stays when scrolling up and down on the website
 used z-index so that the navigation bar would always be on top of the other context
 */
@@ -130,7 +127,7 @@ Active menu state provides good user feedback
 }
 
 /*
-css pseudo-element creates close symbol when menu is active
+css element creates close symbol when menu is active
 */
 
 .menu-toggle.active::before {

@@ -1,3 +1,5 @@
+
+/* This is the background of the about page */
 body{
     background: url('../img/about-page-background.jpg');
     background-size: cover;
@@ -5,17 +7,18 @@ body{
     background-attachment: fixed;
     min-height: 100vh;
 }
-
+/*This is where the title of the about page is */
 .climate-change {
     text-align: center;
     padding: 80px 20px 40px;
     color: white;
 }
-
+/* This is the font size of the sub titles*/
 .climate-change h1{
     font-size: 40px;
 }
 
+/* This is setting the cards of info spread out across the page not bunch up in a column */
 .cards {
     display: flex;
     justify-content: center;
@@ -26,6 +29,7 @@ body{
     gap: 20px;
 }
 
+/* This is the colour of the cards so the cards won't be transparent and hard to read */
 .card{
     background-color: white;
     border-radius: 20px;
@@ -36,18 +40,19 @@ body{
     max-width: 800px;
     width: 100%;
 }
-
+/* This is what happens when you hover over the card*/
 .card:hover{
     transform: translateY(-5px);
     box-shadow: 0 15px 40px;
 }
 
+/* This is setting where the subtitle is and the colour of it */
 .card h2 {
     font-size: 30px;
     color: #1B4F72;
     text-align: center;
 }
-
+/* This is how big the font of the info inside the card is*/
 .card .intro {
     font-size: 18px;
 }
