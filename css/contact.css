@@ -29,7 +29,7 @@ body{
 }
 /* This is the title of the contact page*/
 .contact .content h2 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
@@ -40,7 +40,7 @@ body{
 .contact .content p {
     font-weight: 300;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 /* This is to not set the info and form into a single file column*/

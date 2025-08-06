@@ -15,7 +15,7 @@ body{
 }
 /* This is the font size of the sub titles*/
 .climate-change h1{
-    font-size: 40px;
+    font-size: 60px;
 }
 
 /* This is setting the cards of info spread out across the page not bunch up in a column */
@@ -48,7 +48,7 @@ body{
 
 /* This is setting where the subtitle is and the colour of it */
 .card h2 {
-    font-size: 30px;
+    font-size: 40px;
     color: #1B4F72;
     text-align: center;
 }
