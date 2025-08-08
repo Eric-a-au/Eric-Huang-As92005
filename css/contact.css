@@ -174,7 +174,7 @@ body{
     transform: translateY(-2px);
 }
 /* This is for mobile or smaller screens*/
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .contact {
         padding: 20px;
     }

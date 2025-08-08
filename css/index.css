@@ -70,7 +70,7 @@ body {
 .video{
     margin:auto;
 /* This is for mobile or smaller screens*/
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .context {
         padding: 20px 10px;
         gap: 20px;

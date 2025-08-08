@@ -57,7 +57,7 @@ body{
     font-size: 18px;
 }
 /* This is for mobile or smaller screens*/
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .climate-change{
         padding: 60px 20px 20px;
 }

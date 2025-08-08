@@ -175,7 +175,7 @@ css element creates close symbol when menu is active
 }
 /* mobile navbar styling*/
 
-@media (max-width:500px) {
+@media (max-width:1000px) {
     .nav-container {
         padding: 0 0.5rem;
         position: relative;
